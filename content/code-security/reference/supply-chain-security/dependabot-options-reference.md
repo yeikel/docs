@@ -154,9 +154,12 @@ When `commit-message` is defined:
 
 | Parameters | Purpose |
 |------------|---------|
-| `prefix` | Defines a prefix for all commit messages and pull request titles. |
+| `prefix` | Defines a prefix for all commit messages and pull request titles.  |
 | `prefix-development` | On supported systems, defines a different prefix to use for commits that update dependencies in the Development dependency group. |
 | `include` | Follow the commit message prefix with additional information. |
+
+> [!NOTE]
+> Both `prefix` and `prefix-development` are limited to a maximum of 50 characters.
 
 > [!TIP]
 > When pull requests are raised for grouped updates, the branch name and pull request title are defined by the group `IDENTIFIER`, see [`groups`](#groups--).
